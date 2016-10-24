@@ -1,0 +1,12 @@
+<!doctype html>
+<script src="alameda.js"></script>
+<script>
+	require.config({
+		packages	: [{
+			name		: 'html-janitor',
+			main		: 'src/html-janitor',
+			location	: '/node_modules/html-janitor'
+		}]
+	});
+	require(['html-janitor'], console.log);
+</script>
